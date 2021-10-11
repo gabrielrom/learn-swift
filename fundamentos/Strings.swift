@@ -109,3 +109,23 @@ for codeUnit in dogString.utf8 {
   print("\(codeUnit) ", terminator: "")
 }
 print("")
+
+print("*\(String(repeating: "-", count: 22))*");
+for i in 1...10 {
+
+  if (i <= 5) {
+    print("|\(gerarInimigos())|");
+  }
+
+  if (i == 10) {
+    print("|\(String(repeating: " ", count: 11))🚀\(String(repeating: " ", count: 11 - 2))|");
+  }
+
+  print("|\(String(repeating: " ", count: 22))|");
+}
+print("*\(String(repeating: "-", count: 22))*");
+print("Score: 0\(String(repeating: " ", count: 3)) Enemies: 25");
+
+func gerarInimigos() -> String {
+  return "\(String(repeating: " ", count: 2))👽\(String(repeating: " ", count: 2))👽\(String(repeating: " ", count: 2))👽\(String(repeating: " ", count: 2))👽\(String(repeating: " ", count: 2))👽\(String(repeating: " ", count: 2))";
+}
